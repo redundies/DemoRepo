@@ -1,9 +1,7 @@
 # SETTING UP GITHUB
-On August 2021, Github decided to improve transfer security by preferring SSH over HTTPS. <br/>
-This is a guide on how to setup Git and Github on your KDE Neon User Edition 22.04. <br/>
-This will probably work with Ubuntu and other Ubuntu-based Linux Distributions. <br/>
-This tutorial assumes that you already have a Github Account, and has basic knowledge on creating repositories. <br/><br/>
-Disclaimer: I am a hobbyist and self-taught developer. I am not responsible for any breakages on your system. Follow along at your own risk.<br/>
+On August 2021, Github decided to improve transfer security by preferring SSH over HTTPS. This is a guide on how to setup Git and Github on your KDE Neon User Edition 22.04. This will probably work with Ubuntu and other Ubuntu-based Linux Distributions. <br/>
+This tutorial assumes that you already have a Github Account, and has basic knowledge on creating repositories. <br/>
+> *Disclaimer: I am a hobbyist and self-taught developer. I am not responsible for any breakages on your computer. Follow along at your own risk.* <br/> 
 
 ### STEP 1: Create a Public Repository
 Create a Public Repository. Create a `README.md` file. <br/>
