@@ -137,5 +137,5 @@ git clone ssh://git@ssh.github.com:443/YOUR-USERNAME/YOUR-REPOSITORY.git
 # Finally, do your stuff!
 
 > :clipboard: **NOTE** <br/>
-> *At every reboot, you need to manually enable* `eval "$(ssh-agent -s)"` *or create a script for it to run on start-up. In order to close it (Technically, It kills the process.), you can just write* `eval "$(ssh-agent -k)"`.
+> *You may need to manually enable* `eval "$(ssh-agent -s)"` * and add your SSH Key through* `ssh-add ~/.ssh/your_ssh_key` *everytime you are to start working on a project. In order to close it (Technically, It kills the process.), you can just write* `eval "$(ssh-agent -k)"`.
 
