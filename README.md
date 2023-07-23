@@ -18,7 +18,7 @@ On your terminal (Konsole), install the following:
 sudo apt install git gh openssh-client openssh-server keychain
 ```
 > :clipboard: **NOTE** <br/>
-> *The packages* `git`, `gh`, *and* `openssh-client` *are, most likely, came preinstalled with your distribution*.
+> *The packages* `git`, `gh`, *and* `openssh-client` *came, most likely, preinstalled with your distribution*.
 
 <br/>
 
