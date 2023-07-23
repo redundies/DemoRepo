@@ -40,28 +40,51 @@ On your terminal (Konsole), generate SSH Keys:
  ssh-keygen -t rsa -b 4096 -C "email_you_use_on_github@email.com"
 ```
 
-:large_blue_circle: **PROMPT 1**
-A prompt will show:
-```Enter a file in which to save the key (/home/.../.ssh/id_rsa):```
-Enter your desired name for your key and generate it on the SSH directory: 
-```~/.ssh/desired_name_for_your_key```
+:large_blue_circle: **PROMPT 1** <br/>
+A prompt will show: <br/>
+```Enter a file in which to save the key (/home/.../.ssh/id_rsa):``` <br/>
+Enter your desired name for your key and generate it on the SSH directory: <br/>
+```~/.ssh/desired_name_for_your_key``` <br/>
 > :clipboard: **NOTE** <br/>
 > *Naming your key is optional. However, it is recommended. Just hit enter to ignore naming your SSH Key. This will generate filenames with* `id_rsa`. <br/>
 
-:large_blue_circle: **PROMPT 2**
-Another line of prompt will show:
-```Enter passphrase (empty for no passphrase):```
+:large_blue_circle: **PROMPT 2** <br/>
+Another line of prompt will show: <br/>
+```Enter passphrase (empty for no passphrase):``` <br/>
 > :clipboard: **NOTE** <br/>
 > *Passphrases, although optional, are recommended because they give another layer of protection for your SSH Keys. If you don't want to use passphrases, just hit enter to ignore the prompt. To know more about passphrases,* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases).
 
-:large_blue_circle:
-Another line of prompt will show:
-```Enter same passphrase again:```
+:large_blue_circle: **PROMPT 3** <br/>
+Another line of prompt will show: <br/>
+```Enter same passphrase again:```<br/>
 > :clipboard: **NOTE** <br/>
-> *Re-enter the passphrase that you've used in the previous prompt. If you did not use a passphrase, just ignore the prmopt by hitting enter.*
+> *Re-enter the passphrase that you've used in the previous prompt. If you did not use a passphrase, just ignore the prmopt by hitting enter.* <br/> <br/>
+> :eye_speech_bubble: **OBSERVE** <br/>
+> *This will produce two SSH Keys in the SSH Directory: a private key:* `name_of_your_key`, *and a public key:* `name_of_your_key.pub`.
 
-### STEP 5: Add Private Key to SSH Agent
-### STEP 6: Put SSH Key on Github Settings
+### :five: STEP 5: Add Private Key to SSH Agent
+Go to the SSH Directory:
+```
+cd ~/.ssh
+```
+Activate your SSH Agent:
+```
+eval "$(ssh-agent -s)"
+```
+and then, add your SSH **Private** Key (*The one without the* `.pub` *extension*):
+```
+ssh-add ~/.ssh/name_of_your_key
+```
+Show contents of the SSH **PUBLIC** Key (*The one with the* `.pub` *extension*):
+```
+cat name_of_your_key.pub
+```
+and then, copy its contents to your clipboard, or just highlight the contents and hit `Ctrl + Alt + C`.
+
+
+### :six: STEP 6: Put SSH Key on Github Settings
+On your Github Profile Settings.
+
 ### STEP 7: Test SSH Connection with Github
 ### STEP 8: Configure Preference SSH over HTTPS on Github
 ### STEP 9: Clone Repository via SSH
