@@ -42,9 +42,8 @@ On your terminal (Konsole), generate SSH Keys:
 ```
 This will lead to a prompt:<br/> `Enter a file in which to save the key (/home/.../.ssh/id_rsa):` <br/>
 Type your desired name for your key and generate it on the SSH directory:<br/> `~/.ssh/desired_name_for_your_key` <br/>
->Optional: Naming your key is optional. However, it is recommended.
->
->Just hit enter to ignore naming your key. This will produce files with the filename `id_rsa`.
+>Optional: Naming your key is optional. However, it is recommended. <br/>
+>Just hit enter to ignore naming your key. This will produce files with the filename `id_rsa`. <br/>
 Another prompt will show:<br/> `Enter passphrase (empty for no passphrase):`
 >Passphrases give another layer of protection for your SSH Keys, but are completely optional.
 >If you don't want to use a passphrase, just hit your enter key to ignore.
