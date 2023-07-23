@@ -2,17 +2,18 @@
 On August 2021, Github decided to improve transfer security by preferring SSH over HTTPS. This is a guide on how to setup Git and Github on your KDE Neon User Edition 22.04. This will probably work with Ubuntu and other Ubuntu-based Linux Distributions.
 This tutorial assumes that you already have a Github Account, and has basic knowledge on terminal usage and creating repositories. <br/>
 > :warning: **DISCLAIMER** <br/>
-> *I am a hobbyist and self-taught developer. I am not responsible for any breakages on your computer. Follow along at your own risk.* <br/> 
+> *I am a hobbyist and self-taught developer. I am not responsible for any breakages on your computer. Follow along at your own risk.* <br/> <br/>
 
 ### :one: STEP 1: Creating a Public Repository
-Create a Public Repository. Create a `README.md` file. <br/>
+Create a Public Repository. Create a `README.md` file. <br/><br/>
 
 ### :two: STEP 2: Installing Necessary OpenSSH Client & Other Packages
 On your terminal (Konsole), install the following:
 ```
 sudo apt install git gh openssh-client openssh-server keychain
 ```
-The packages `git`, `gh`, and `openssh-client` are, most likely, came preinstalled with your distribution. <br/>
+> :clipboard: **NOTE** <br/>
+> *The packages* `git`, `gh`, *and* `openssh-client` *are, most likely, came preinstalled with your distribution*. <br/><br/>
 
 ### :three: STEP 3: Configuring Global settings for Git
 Configure settings for Git:
@@ -23,7 +24,7 @@ and then followed by:
 ```
 git config --global user.email "email_you_use_on_github@email.com"
 ```
-<br/>
+<br/><br/>
 
 ### :four: STEP 4: Creating an SSH Directory
 Make a hidden SSH directory:
@@ -31,11 +32,12 @@ Make a hidden SSH directory:
 mkdir ~/.ssh
 ```
 <br/>
-You may also create the folders graphically using the File Manager (Dolphin). <br/>
-Keeping in mind that hidden folders can be unhidden <i>v. versa</i> using <code>Ctrl + H</code>. <br/>
+> :clipboard: **NOTE** <br/>
+> *You may also create the folders graphically using the File Manager (Dolphin). Keeping in mind that hidden folders can be unhidden, v. versa, using* `Ctrl + H`. 
+<br/><br/>
 
 ### :five: STEP 5: Generating SSH Key with a Passphrase
-On your terminal (Konsole), generate SSH Keys:
+Generate SSH Keys:
 ```
  ssh-keygen -t rsa -b 4096 -C "email_you_use_on_github@email.com"
 ```
