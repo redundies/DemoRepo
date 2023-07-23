@@ -91,7 +91,7 @@ Show contents of the SSH **Public** Key (*The one with the* `.pub` *extension*):
 ```
 cat name_of_your_key.pub
 ```
-and then, copy its contents to your clipboard, or just highlight the contents and hit `Ctrl + Alt + C`.
+and then, copy its contents to your clipboard, or just highlight the contents and hit `Ctrl + Shift + C`.
 
 <br/>
 
