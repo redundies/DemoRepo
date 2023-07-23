@@ -33,7 +33,7 @@ mkdir -p ~/.ssh/id_rsa
 ```
 <br/>
 You may also create the folders graphically using the File Manager (Dolphin). <br/>
-Keeping in mind that hidden folders can be unhidden *v. versa* using `Ctrl + H`. <br/>
+Keeping in mind that hidden folders can be unhidden <i>v. versa</i> using <code>Ctrl + H</code>. <br/>
 
 ### STEP 5: Create SSH Key with a Passphrase
 On your terminal (Konsole), generate SSH Keys:
