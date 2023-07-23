@@ -1,11 +1,13 @@
 # SETTING UP GITHUB
-On August 2021, Github decided to improve transfer security by preferring SSH over HTTPS. This is a guide on how to setup Git and Github on your KDE Neon User Edition 22.04. This will probably work with Ubuntu and other Ubuntu-based Linux Distributions.
-This tutorial assumes that you already have a Github Account, and has basic knowledge on terminal usage and creating repositories. <br/>
+On August 2021, Github decided to improve transfer security by preferring SSH over HTTPS Ports. This is a guide on how to setup Git and Github on your KDE Neon User Edition 22.04. This will probably work with Ubuntu and other Ubuntu-based Linux Distributions. This tutorial assumes that you already have a Github Account, and has basic knowledge on terminal usage and creating repositories. <br/>
 > :warning: **DISCLAIMER** <br/>
 > *I am a hobbyist and self-taught developer. I am not responsible for any breakages on your computer. Follow along at your own risk.* <br/> <br/>
 
 ### :one: STEP 1: Creating a Public Repository
-Create a Public Repository. Create a `README.md` file. <br/><br/>
+On your Github Profile Dashboard:
+> Create a Public Repository. <br/>
+> Create a `README.md` file.
+<br/><br/>
 
 ### :two: STEP 2: Installing Necessary OpenSSH Client & Other Packages
 On your terminal (Konsole), install the following:
@@ -13,7 +15,8 @@ On your terminal (Konsole), install the following:
 sudo apt install git gh openssh-client openssh-server keychain
 ```
 > :clipboard: **NOTE** <br/>
-> *The packages* `git`, `gh`, *and* `openssh-client` *are, most likely, came preinstalled with your distribution*. <br/><br/>
+> *The packages* `git`, `gh`, *and* `openssh-client` *are, most likely, came preinstalled with your distribution*.
+<br/><br/>
 
 ### :three: STEP 3: Configuring Global settings for Git
 Configure settings for Git:
@@ -63,6 +66,7 @@ Another line of prompt will show: <br/>
 > *Re-enter the passphrase that you've used in the previous prompt. If you did not use a passphrase, just ignore the prmopt by hitting enter.* <br/> <br/>
 > :eye_speech_bubble: **OBSERVE** <br/>
 > *This will produce two SSH Keys in the SSH Directory: a private key:* `name_of_your_key`, *and a public key:* `name_of_your_key.pub`.
+<br/><br/>
 
 ### :five: STEP 5: Adding Private Key to the SSH Agent
 Go to the SSH Directory:
@@ -82,7 +86,7 @@ Show contents of the SSH **PUBLIC** Key (*The one with the* `.pub` *extension*):
 cat name_of_your_key.pub
 ```
 and then, copy its contents to your clipboard, or just highlight the contents and hit `Ctrl + Alt + C`.
-
+<br/><br/>
 
 ### :six: STEP 6: Putting SSH Key on Github Settings
 On your Github Profile Settings.
@@ -90,7 +94,8 @@ On your Github Profile Settings.
 > Click the **New SSH Key** button. <br/>
 > Put the name of your key on the **Title** input section. <br/>
 > Paste the contents of your public key that you have copied earlier to the **Key** input section. <br/>
-> Click the **Add SSH Key** button. <br/><br/>
+> Click the **Add SSH Key** button.
+<br/><br/>
 
 ### :seven: STEP 7: Testing & Configuring Preference of SSH over HTTPS Ports on Github
 Going back to your terminal (Dolphin), enable Github to use SSH over HTTPS Ports by configuring `~/.ssh/config`. (If the file does not exist, create one.):
@@ -113,6 +118,7 @@ ssh -T git@github.com
 ```
 > :clipboard: **NOTE** <br/>
 > *To know more about Testing* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
+<br/><br/>
 
 ### :eight: STEP 8: Clone Repositories
 Clone repositories using SSH.
@@ -122,5 +128,5 @@ git clone ssh://git@ssh.github.com:443/YOUR-USERNAME/YOUR-REPOSITORY.git
 # Finally, do your stuff!
 
 > :clipboard: **NOTE** <br/>
-> *At every reboot you need to manually enable* `eval "$(ssh-agent -s)"` *or create a script for it to run on start-up. In order to close (Technically, It kills the process.) it you can just write* `eval "$(ssh-agent -k)"`.
+> *At every reboot, you need to manually enable* `eval "$(ssh-agent -s)"` *or create a script for it to run on start-up. In order to close (Technically, It kills the process.) it you can just write* `eval "$(ssh-agent -k)"`.
 
