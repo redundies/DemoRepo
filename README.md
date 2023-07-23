@@ -87,7 +87,7 @@ and then, add your SSH **Private** Key (*The one without the* `.pub` *extension*
 ```
 ssh-add ~/.ssh/name_of_your_key
 ```
-Show contents of the SSH **PUBLIC** Key (*The one with the* `.pub` *extension*):
+Show contents of the SSH **Public** Key (*The one with the* `.pub` *extension*):
 ```
 cat name_of_your_key.pub
 ```
