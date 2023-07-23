@@ -29,7 +29,7 @@ git config --global user.email "email_you_use_on_github@email.com"
 ### STEP 4: Create an SSH Directory
 On your terminal (Konsole), make a hidden SSH directory:
 ```
-mkdir -p ~/.ssh/id_rsa
+mkdir ~/.ssh
 ```
 <br/>
 You may also create the folders graphically using the File Manager (Dolphin). <br/>
@@ -41,10 +41,13 @@ On your terminal (Konsole), generate SSH Keys:
  ssh-keygen -t rsa -b 4096 -C "email_you_use_on_github@email.com"
 ```
 This will lead to a prompt:<br/> `Enter a file in which to save the key (/home/.../.ssh/id_rsa):` <br/>
-Type your desired name for your key and generate it on the SSH directory:<br/> `~/.ssh/id_rsa/desired_name_for_your_key` <br/>
+Type your desired name for your key and generate it on the SSH directory:<br/> `~/.ssh/desired_name_for_your_key` <br/>
+>Optional: Naming your key is optional. However, it is recommended.
+>
+>Just hit enter to ignore naming your key. This will produce files with the filename `id_rsa`.
 Another prompt will show:<br/> `Enter passphrase (empty for no passphrase):`
 >Passphrases give another layer of protection for your SSH Keys, but are completely optional.
->If you don't want to use a passphrase, just hit enter.
+>If you don't want to use a passphrase, just hit your enter key to ignore.
 >Passphrases are made up of random letters and digits.
 >You may create your own or generate it using the terminal.
 
