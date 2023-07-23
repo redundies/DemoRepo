@@ -68,7 +68,7 @@ Another line of prompt will show: <br/>
 Another line of prompt will show: <br/>
 ```Enter same passphrase again:```<br/>
 > :clipboard: **NOTE** <br/>
-> *Re-enter the passphrase that you've used in the previous prompt. If you did not use a passphrase, just ignore the prmopt by hitting enter.* <br/> <br/>
+> *Re-enter the passphrase that you've used in the previous prompt. If you did not use a passphrase, just ignore the prompt by hitting enter.* <br/> <br/>
 > :eye_speech_bubble: **OBSERVE** <br/>
 > *This will produce two SSH Keys in the SSH Directory: a private key:* `name_of_your_key`, *and a public key:* `name_of_your_key.pub`.
 
