@@ -118,7 +118,7 @@ Test Github SSH Preference.
 ssh -T -p 443 git@ssh.github.com
 ```
 > :clipboard: **NOTE** <br/>
-> *To know more about Testing* [go here]([https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection](https://docs.github.com/en/authentication/troubleshooting-ssh/using-ssh-over-the-https-port).
+> *To know more about Testing* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
 
 Test your SSH Connection with Github
 ```
