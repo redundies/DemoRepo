@@ -31,6 +31,7 @@ and then followed by:
 ```
 git config --global user.email "email_you_use_on_github@email.com"
 ```
+
 <br/><br/>
 
 ### :four: STEP 4: Creating an SSH Directory
@@ -38,9 +39,9 @@ Make a hidden SSH directory:
 ```
 mkdir ~/.ssh
 ```
-<br/>
 > :clipboard: **NOTE** <br/>
 > *You may also create the folders graphically using the File Manager (Dolphin). Keeping in mind that hidden folders can be unhidden, v. versa, using* `Ctrl + H`. 
+
 <br/><br/>
 
 ### :five: STEP 5: Generating SSH Key with a Passphrase
@@ -70,6 +71,7 @@ Another line of prompt will show: <br/>
 > *Re-enter the passphrase that you've used in the previous prompt. If you did not use a passphrase, just ignore the prmopt by hitting enter.* <br/> <br/>
 > :eye_speech_bubble: **OBSERVE** <br/>
 > *This will produce two SSH Keys in the SSH Directory: a private key:* `name_of_your_key`, *and a public key:* `name_of_your_key.pub`.
+
 <br/><br/>
 
 ### :five: STEP 5: Adding Private Key to the SSH Agent
@@ -90,6 +92,7 @@ Show contents of the SSH **PUBLIC** Key (*The one with the* `.pub` *extension*):
 cat name_of_your_key.pub
 ```
 and then, copy its contents to your clipboard, or just highlight the contents and hit `Ctrl + Alt + C`.
+
 <br/><br/>
 
 ### :six: STEP 6: Putting SSH Key on Github Settings
@@ -99,6 +102,7 @@ On your Github Profile Settings.
 > Put the name of your key on the **Title** input section. <br/>
 > Paste the contents of your public key that you have copied earlier to the **Key** input section. <br/>
 > Click the **Add SSH Key** button.
+
 <br/><br/>
 
 ### :seven: STEP 7: Testing & Configuring Preference of SSH over HTTPS Ports on Github
@@ -122,6 +126,7 @@ ssh -T git@github.com
 ```
 > :clipboard: **NOTE** <br/>
 > *To know more about Testing* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
+
 <br/><br/>
 
 ### :eight: STEP 8: Clone Repositories
