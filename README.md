@@ -122,14 +122,14 @@ Test Github SSH Preference.
 ssh -T -p 443 git@ssh.github.com
 ```
 > :clipboard: **NOTE** <br/>
-> *To know more about Testing* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
+> *To know more about SSH Preference Testing* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
 
 Test your SSH Connection with Github
 ```
 ssh -T git@github.com
 ```
 > :clipboard: **NOTE** <br/>
-> *To know more about Testing* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
+> *To know more about SSH Connection Testing* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
 
 <br/>
 
@@ -141,7 +141,7 @@ git clone ssh://git@ssh.github.com:443/YOUR-USERNAME/YOUR-REPOSITORY.git
 ### You Can Now Work on Your Remote Repositories!
 
 > :clipboard: **NOTE** <br/>
-> *Due to efficient SSH security measures, processes involving SSH Keys are automatically terminated by the system.*
-> *You may need to manually reenable them through* `eval "$(ssh-agent -s)"` *and re-enlist your SSH Key through* `ssh-add ~/.ssh/your_ssh_key` *everytime you are to start working on a project.*
+> *Due to efficient SSH security measures, processes involving SSH Keys are automatically terminated by the system.* <br/>
+> *You may need to manually reenable them through* `eval "$(ssh-agent -s)"` *and re-enlist your SSH Key through* `ssh-add ~/.ssh/your_ssh_key` *everytime you are to start working on a project.* <br/>
 > *In order to close it (Technically, It kills the process.), you can just input* `eval "$(ssh-agent -k)"`.
 
