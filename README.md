@@ -85,10 +85,15 @@ and then, copy its contents to your clipboard, or just highlight the contents an
 
 
 ### :six: STEP 6: Putting SSH Key on Github Settings
-On your Github Profile Settings. Navigate to **SSH & GPG Keys**. Click the **New SSH Key** button. Put the name of your key on the **Title** input section, and paste the contents of your public key that you have copied earlier to the **Key** input section. Click the **Add SSH Key** button.
+On your Github Profile Settings.
+> Navigate to **SSH & GPG Keys**. <br/>
+> Click the **New SSH Key** button. <br/>
+> Put the name of your key on the **Title** input section. <br/>
+> Paste the contents of your public key that you have copied earlier to the **Key** input section. <br/>
+> Click the **Add SSH Key** button. <br/><br/>
 
 ### :seven: STEP 7: Testing & Configuring Preference of SSH over HTTPS Ports on Github
-Going back to your terminal (Dolphin), enable Github to use SSH over HTTPS Ports by (creating, if the file does not exist) configuring `~/.ssh/config`:
+Going back to your terminal (Dolphin), enable Github to use SSH over HTTPS Ports by configuring `~/.ssh/config`. (If the file does not exist, create one.):
 ```
 Host github.com
     Hostname ssh.github.com
@@ -109,10 +114,13 @@ ssh -T git@github.com
 > :clipboard: **NOTE** <br/>
 > *To know more about Testing* [go here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
 
-### :seven: STEP 7: Clone Repositories
+### :eight: STEP 8: Clone Repositories
 Clone repositories using SSH.
 ```
 git clone ssh://git@ssh.github.com:443/YOUR-USERNAME/YOUR-REPOSITORY.git
 ```
-Finally, do your stuff!
+# Finally, do your stuff!
+
+> :clipboard: **NOTE** <br/>
+> *At every reboot you need to manually enable* `eval "$(ssh-agent -s)"` *or create a script for it to run on start-up. In order to close (Technically, It kills the process.) it you can just write* `eval "$(ssh-agent -k)"`.
 
