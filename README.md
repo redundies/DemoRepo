@@ -43,13 +43,15 @@ On your terminal (Konsole), generate SSH Keys:
 This will lead to a prompt:<br/> `Enter a file in which to save the key (/home/.../.ssh/id_rsa):` <br/>
 Type your desired name for your key and generate it on the SSH directory:<br/> `~/.ssh/desired_name_for_your_key` <br/>
 ><i>NOTE: Naming your key is optional. However, it is recommended. </i><br/>
-><i>Just hit enter to ignore naming your key. This will produce files with the filename `id_rsa`. </i><br/>
+><i>Just hit enter to ignore naming your key. This will generate files with the filename <br/> `id_rsa`.<br/>
 
 Another prompt will show:<br/> `Enter passphrase (empty for no passphrase):`
->Passphrases give another layer of protection for your SSH Keys, but are completely optional.
->If you don't want to use a passphrase, just hit your enter key to ignore.
->Passphrases are made up of random letters and digits.
->You may create your own or generate it using the terminal.
+><i>NOTE: Passphrases are recommended because they give another layer of protection for your SSH Keys, but are completely optional.</i><br/>
+><i>If you don't want to use a passphrase, just hit your enter key to ignore.</i><br/>
+
+Another prompt will show: <br/> `Enter same passphrase again:`
+><i>NOTE: Re-enter the passphrase that you've used in the previous prompt. </i><br/>
+><i>If you did not use any passphrase, just ignore by hitting enter.</i><br/>
 
 ### STEP 5: Add Private Key to SSH Agent
 ### STEP 6: Put SSH Key on Github Settings
